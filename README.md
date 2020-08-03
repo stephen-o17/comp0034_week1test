@@ -9,7 +9,7 @@ You should have a preferred Jupyter notebook environment set up from COMP0035, i
 
 Once you have the notebook open, you should follow the instructions in the notebook itself.
 
-You can access the notebook using [Binder](https://mybinder.org) at [https://mybinder.org/v2/gh/nicholsons/comp0034_week1.git/master?filepath=data_visualisation.ipynb](https://mybinder.org/v2/gh/nicholsons/comp0034_week1.git/master?filepath=data_visualisation.ipynb).  
+You can access the notebook using [Binder](https://mybinder.org) at [https://mybinder.org/v2/gh/nicholsons/comp0034_week1.git/master?](https://mybinder.org/v2/gh/nicholsons/comp0034_week1.git/master?).  
 
 You will be able to make changes to the code during your Binder sessions and see the effect of your changes, however when you exit Binder any changes that you have made will not be saved. If you wish to save changes that you make to access at another time then the menu bar within the Binder session provides an option to download the notebook to your computer.
 
