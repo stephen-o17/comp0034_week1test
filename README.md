@@ -1,13 +1,11 @@
 # COMP0034: Code for activities in week 1
 
 ## Using Jupyter notebooks
-You should have a preferred Jupyter notebook environment set up from COMP0035, if not then use the Binder cloud service below. This creates a virtual coding environment in the cloud for you to use so you don't need to install anything on your machine. It will take a few minutes for this environment to be created, once it is ready you will see a page that looks a little like this one with a list of files. Select 
+You should have a preferred Jupyter notebook environment set up from COMP0035, if not then use the Binder cloud service below. This creates a virtual coding environment in the cloud for you to use so you don't need to install anything on your machine. It will take a few minutes for this environment to be created, once it is ready you will see a page that looks a little like this one with a list of files.
 
 Once you have the notebook open, you should follow the instructions in the notebook itself.
 
-You can access the notebooks using [Binder](https://mybinder.org) at [https://mybinder.org/v2/gh/nicholsons/comp0034_week1.git/master?](https://mybinder.org/v2/gh/nicholsons/comp0034_week1.git/master?).  
-
-You will be able to make changes to the code during your Binder sessions and see the effect of your changes, however when you exit Binder any changes that you have made will not be saved. If you wish to save changes that you make to access at another time then the menu bar within the Binder session provides an option to download the notebook to your computer.
+You can access the notebooks using [Binder](https://mybinder.org) at [https://mybinder.org/v2/gh/nicholsons/comp0034_week1.git/master?](https://mybinder.org/v2/gh/nicholsons/comp0034_week1.git/master?). You will be able to make changes to the code during your Binder sessions and see the effect of your changes, however when you exit Binder any changes that you have made will not be saved. If you wish to save changes that you make to access at another time then the menu bar within the Binder session provides an option to download the notebook to your computer.
 
 [Information on privacy for the Binder service can be found here](https://mybinder.readthedocs.io/en/latest/faq.html).
 
