@@ -1,4 +1,4 @@
 plotly==4.8.0
 pandas==1.0.3
 pysort==1.0.0
-
+matplotlib==3.0.0
