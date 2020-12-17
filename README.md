@@ -11,7 +11,7 @@ You can access the notebooks using [Binder](https://mybinder.org) at [https://my
 
 [Information on privacy for the Binder service can be found here](https://mybinder.readthedocs.io/en/latest/faq.html).
 
-## Activity 1.4 Introduction to data visualisation Jupyter notebook
+## Activity 1.3 Introduction to data visualisation Jupyter notebook
 The jupyter notebook provides an introduction to visualising data. 
 
 ### Acknowledgements
@@ -21,7 +21,7 @@ The code examples in the notebook make use of the [Plotly Express](https://plotl
 
 The Gapminder data can also be accessed freely at [Gapminder.org](https://www.gapminder.org/data/). The 'math_achievement_8th_grade.csv' file in this repository was downloaded from Gapminder.
 
-## Activity 1.8 Introduction to pie and line charts using matplotlib
+## Activity 1.7 Introduction to pie and line charts using matplotlib
 This notebook introduces you to using matplotlib and pandas to create charts.
 
 It also introduces bar and pie charts as a means of representing data.
