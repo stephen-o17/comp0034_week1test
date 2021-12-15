@@ -70,7 +70,9 @@ Re-run the code. Be patient, this chart will take a few minutes to display. Once
 button under the chart to start the animation.
 
 ### Challenges
+
 There are no example solutions to these. These are challenges for you to try.
+
 #### Can you create an animated map instead of a bubble chart of the Gapminder data?
 
 Check out this [blog post on Medium](https://medium.com/plotly/introducing-plotly-express-808df010143d) and scroll down
@@ -108,7 +110,7 @@ the [Pandas documentation](https://pandas.pydata.org/pandas-docs/stable/user_gui
 
 ## Acknowledgements
 
-The introductory video is a TED talk given by Hans Rosling
+The activity is inspired by a TED talk given by Hans Rosling
 called ['The best stats you have ever seen'](https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare)
 .
 
