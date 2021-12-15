@@ -70,20 +70,20 @@ Re-run the code. Be patient, this chart will take a few minutes to display. Once
 button under the chart to start the animation.
 
 ### Challenges
-
-1. Can you create an animated map instead of a bubble chart of the Gapminder data?
+There are no example solutions to these. These are challenges for you to try.
+#### Can you create an animated map instead of a bubble chart of the Gapminder data?
 
 Check out this [blog post on Medium](https://medium.com/plotly/introducing-plotly-express-808df010143d) and scroll down
 the page to find guidance for creating an animated map.
 
-2. Can you create an interesting bubble chart using a different dataset?
+#### Can you create an animated bubble chart using a different dataset?
 
 There are many sources of datasets, [Plotly provides a number here](https://plotly.github.io/datasets/).
 
 You could also head over to the [Gapminder website](https://www.gapminder.org/data/) and see what other data sets they
 make available.
 
-Remember that using pandas DataFrame you can read from URL or a local files.
+Remember that using pandas DataFrame you can read from a URL or a local file.
 
 If the file is accessible via a URL then you can provide that as the location, for example the following reads a csv
 file from the URL https://raw.githubusercontent.com/plotly/datasets/master/2014_apple_stock.csv:
