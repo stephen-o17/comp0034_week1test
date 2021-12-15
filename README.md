@@ -1,30 +1,125 @@
 # COMP0034: Code for activities in week 1
 
-## Using Jupyter notebooks
-You should have a preferred Jupyter notebook environment set up from COMP0035, if not then use the Binder cloud service below. This creates a virtual coding environment in the cloud for you to use so you don't need to install anything on your machine. It will take a few minutes for this environment to be created, once it is ready you will see a page that looks a little like this one with a list of files.
+### Introduction
 
-If you are using PyCharm Professional then refer to the [documentation which explains how to use jupyter notebooks](https://www.jetbrains.com/help/pycharm/jupyter-notebook-support.html?keymap=secondary_macos).
+There are many ways you could use your programming skills to recreate some of these now famous charts. This term we will
+learn techniques for doing this in Python using the Plotly chart libraries. There are lots of libraries or packages we
+could use for data visualisation, each with their own strengths, for this first chart we are going to
+use [Plotly Express](https://plotly.com/python/plotly-express/). Plotly Express includes access to a number of datasets,
+including the data that Hans Rosling used in his talk.
 
-Once you have the notebook open, you should follow the instructions in the notebook itself.
+### Create a bubble chart
 
-You can access the notebooks using [Binder](https://mybinder.org) at [https://mybinder.org/v2/gh/nicholsons/comp0034_week1.git/master?](https://mybinder.org/v2/gh/nicholsons/comp0034_week1.git/master?). You will be able to make changes to the code during your Binder sessions and see the effect of your changes, however when you exit Binder any changes that you have made will not be saved. If you wish to save changes that you make to access at another time then the menu bar within the Binder session provides an option to download the notebook to your computer.
+Recreate the 'Life Expectancy v. Per Capita GDP, 2007' bubble chart using the gapminder data.
 
-[Information on privacy for the Binder service can be found here](https://mybinder.readthedocs.io/en/latest/faq.html).
+A bubble chart is a scatter plot in which a third dimension of the data is shown through the size of markers.
 
-## Activity 1.4 Introduction to data visualisation Jupyter notebook
-The jupyter notebook provides an introduction to visualising data. 
+Open the file [code_examples/gapminder_charts.py](code_examples/gapminder_charts.py). Read through the code and then run
+it. You should see the chart in a browser.
 
-### Acknowledgements
-The introductory video in the notebook is a TED talk given by Hans Rosling called ['The best stats you have ever seen'](https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare).
+> **Challenge**: Change the chart to display the data for 1987. You will need to run the code again after you make your changes.
 
-The code examples in the notebook make use of the [Plotly Express](https://plotly.com/python/plotly-express/) library. This library provides direct access to the Gapminder data set. There are also examples for the use of the Gapminder data in their help and documentation.
+### Improve the chart appearance
 
-The Gapminder data can also be accessed freely at [Gapminder.org](https://www.gapminder.org/data/). The 'math_achievement_8th_grade.csv' file in this repository was downloaded from Gapminder.
+With just a few lines of code we created a pretty reasonable chart. When we created the chart you may have noticed we
+added a number of attributes such as `x="gdpPercap"` to specify the data column for the x-axis and `colour="continent"`
+to specify how to apply colours to the bubbles. The attributes and options are all defined in
+the [Plotly Express documentation](https://plotly.com/python-api-reference/generated/plotly.express.scatter.html#plotly.express.scatter)
+.
 
-## Activity 1.8 Introduction to pie and line charts using matplotlib
-This notebook introduces you to using matplotlib and pandas to create charts.
+Try and improve the appearance of the chart by adding a title and using more meaningful descriptions for the axes.
 
-It also introduces bar and pie charts as a means of representing data.
+Add the code below to the `create_bubble_chart` function and re-run the code.
+
+```python
+# Add a title and change the x-axis name
+fig.update_layout(
+    title='Life Expectancy v. Per Capita GDP, 2007',
+    xaxis=dict(
+        title='GDP per capita',
+    ),
+)
+```
+
+> **Challenge** Modify the y-axis title to display as 'Life Expectancy (years)'
+
+Have a go in the cell below.
+
+### Animate the chart
+
+Plotly Express provides the ability to animate the bubble chart using attributes for `animation_frame`
+and `animation_group`.
+
+Modify the scatter code to add animation, e.g.
+
+```python
+fig = px.scatter(df,
+                 x="gdpPercap",
+                 y="lifeExp",
+                 animation_frame="year",
+                 animation_group="country",
+                 size="pop",
+                 color="continent",
+                 hover_name="country",
+                 log_x=True,
+                 size_max=60,
+                 )
+```
+
+Re-run the code. Be patient, this chart will take a few minutes to display. Once the chart is displayed, press the play
+button under the chart to start the animation.
+
+### Challenges
+
+1. Can you create an animated map instead of a bubble chart of the Gapminder data?
+
+Check out this [blog post on Medium](https://medium.com/plotly/introducing-plotly-express-808df010143d) and scroll down
+the page to find guidance for creating an animated map.
+
+2. Can you create an interesting bubble chart using a different dataset?
+
+There are many sources of datasets, [Plotly provides a number here](https://plotly.github.io/datasets/).
+
+You could also head over to the [Gapminder website](https://www.gapminder.org/data/) and see what other data sets they
+make available.
+
+Remember that using pandas DataFrame you can read from URL or a local files.
+
+If the file is accessible via a URL then you can provide that as the location, for example the following reads a csv
+file from the URL https://raw.githubusercontent.com/plotly/datasets/master/2014_apple_stock.csv:
+
+```python
+import pandas as pd
+
+df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/2014_apple_stock.csv')
+```
+
+To read from a file located in this project directory:
+
+```python
+import pandas as pd
+
+df = pd.read_csv('data/math_achievement_8th_grade.csv')
+```
+
+The above both use code that reads a comma-separated variable (csv) format file. Pandas has read functions for other
+formats which you can find in
+the [Pandas documentation](https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html).
+
+## Acknowledgements
+
+The introductory video is a TED talk given by Hans Rosling
+called ['The best stats you have ever seen'](https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare)
+.
+
+The code examples make use of the [Plotly Express](https://plotly.com/python/plotly-express/) library. This library
+provides direct access to the Gapminder data set. There are also examples for the use of the Gapminder data in their
+help and documentation.
+
+The Gapminder data can also be accessed freely at [Gapminder.org](https://www.gapminder.org/data/). The '
+math_achievement_8th_grade.csv' file in this repository was downloaded from Gapminder.
 
 ## Feedback and corrections to files in this repository
-Please report suggestions or errors at [https://github.com/nicholsons/comp0034_week1/issues](https://github.com/nicholsons/comp0034_week1/issues).
+
+Please report suggestions or errors
+at [https://github.com/nicholsons/comp0034_week1/issues](https://github.com/nicholsons/comp0034_week1/issues).
