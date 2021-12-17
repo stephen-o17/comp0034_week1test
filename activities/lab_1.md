@@ -65,9 +65,15 @@ app.run_server(debug=True, port=1337)
 ## Start the coursework
 
 1. Read the coursework specification on Moodle.
-2. Copy your target audience description (likely personas) into your coursework repository into a suitable directory
+2. Copy your target audience description e.g., persona(s), from COMP0035 coursework 1 into your coursework repository
+   into a suitable directory.
 3. Copy the questions you intend to answer from COMP0035 coursework 1 into your repository (e.g. copy and paste them to
-   the coursework markdown)
+   the COMP0034 coursework 1 markdown).
 4. Select one question from your list.
 5. Review the chart types and consider which might be suitable for the audience and question.
-6. 
+
+    - [The Data Visualisation Catalogue](https://datavizcatalogue.com/index.html)
+    - [Interactive Chart Chooser](https://depictdatastudio.com/charts/)
+
+6. If you have read the week 1 materials, consider the design (layout, colours, titles, use of whitespace etc) for your
+   chart.
