@@ -7,14 +7,12 @@
 
 ## Set-up instructions
 
-**New: GitHub Fork versus Clone**. The coursework is in GitHub classroom, however the weekly repositories are not. The process to accept the
-weekly repos is different. You should first [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the repository to create a copy in your own GitHub account, and then
-[clone the forked repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository). 
-
-You can [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) directly from the tutor's repo without forking however you will then only have
-the repository on your local computer and not in GitHub. You will not be able to push changes to the tutor's repository.
-
-1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the repository to create a copy in your own GitHub account. 
+1. Create a repository by using the [Use this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) green button. 
+    - Use the Owner drop-down to select your GitHub account.
+    - Type a name for the repo
+    - Set visibility to private
+    - Leave other options unselected
+    - Select create repository from template
 2. Clone this repository from GitHub in your IDE. Follow the help in your IDE
    e.g. [PyCharm](https://www.jetbrains.com/help/pycharm/manage-projects-hosted-on-github.html#clone-from-GitHub)
    or [VS Code.](https://code.visualstudio.com/docs/editor/github#_cloning-a-repository)
