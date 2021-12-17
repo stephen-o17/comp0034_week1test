@@ -25,7 +25,7 @@ Each person should do this.
 2. Add a virtual environment (venv). Use the instructions for your IDE
    or [navigate to your project directory and use python.](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 3. Install the requirements from requirements.txt. Use the instructions for your IDE
-   or [use python in your shell.](https://pip.pypa.io/en/latest/user_guide/#requirements-files).
+   or [use python in your shell.](https://pip.pypa.io/en/latest/user_guide/#requirements-files)
 4. Edit .gitignore to add any config files and folders for your IDE. PyCharm, VisualStudio Code, Xcode and NetBeans have
    already been added.
 5. Copy the prepared data set from COMP0035 coursework to this repository. You may need to use 'git add' to add the file
@@ -39,9 +39,9 @@ Each person should do this.
 happy that you have set up the project then you should delete the contents of app.py and replace with your coursework
 code.
 
-- To run the dash app from the terminal or shell make sure you are in directory of your repository and type and
+- To run the dash app from the terminal or shell, make sure you are in directory of your repository and type and
   run `python dash_app.py`
-- To run the dash app from PyCharm, right click on the file name `dash_app.py` in the Project pane and
+- To run the dash app from PyCharm, right-click on the file name `dash_app.py` in the Project pane and
   select `Run dash_app`. Or open `dash_app.py` and click on the green run arrow near line 29.
 - To run the dash app from VS Code, use the Run option from the left pane.
 
@@ -75,5 +75,5 @@ app.run_server(debug=True, port=1337)
     - [The Data Visualisation Catalogue](https://datavizcatalogue.com/index.html)
     - [Interactive Chart Chooser](https://depictdatastudio.com/charts/)
 
-6. If you have read the week 1 materials, consider the design (layout, colours, titles, use of whitespace etc) for your
+6. If you have read the week 1 materials, consider the design (layout, colours, titles, use of whitespace etc.) for your
    chart.
