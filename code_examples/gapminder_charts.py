@@ -9,8 +9,15 @@ def gapminder_bubble_chart(df):
     :type data: DataFrame
     :return: None
     """
-    fig = px.scatter(df.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
-                     hover_name="country", log_x=True, size_max=60)
+    data_2007 = df.query("year==2007")
+    fig = px.scatter(data_2007,
+                     x="gdpPercap",
+                     y="lifeExp",
+                     size="pop",
+                     color="continent",
+                     hover_name="country",
+                     log_x=True,
+                     size_max=60)
 
     fig.show()
 
